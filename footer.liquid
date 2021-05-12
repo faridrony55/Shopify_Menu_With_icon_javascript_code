@@ -1,0 +1,156 @@
+
+
+
+ {{ 'jquery-1.11.1.min.js' | asset_url | script_tag }}
+<script>
+  
+  
+  
+  /**** Mobile Menu ***/
+    $(document).ready(function(){
+      
+   // mobile Main Menu
+  $(".mobile-draw .mobile-draw__wrapper .mobile-draw__nav ul.mobile-nav__items li.mobile-nav__item a, .header-navs .primary-nav  ul.primary-nav__items li.primary-nav__item a.primary-nav__link").text(function(){
+    
+    var menutext = $(this).text(); 
+    
+    if(menutext == "About us" || menutext == 'Despre noi'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/desprenoi_256x256_crop_center.png?v=1620750110"/>';
+          $(this).prepend(img);
+     }
+    if(menutext == "Fairy tales" || menutext == 'Povești'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/povesti_256x256_crop_center.png?v=1620750110"/>';
+          $(this).prepend(img);
+     } 
+    if(menutext == "STORE" || menutext == 'MAGAZIN'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/magazin_256x256_crop_center.png?v=1620750110"/>';
+          $(this).prepend(img);
+     } 
+    if(menutext == "Gifts" || menutext == 'CADOURI'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/cadouri_256x256_crop_center.png?v=1620750111"/>';
+          $(this).prepend(img);
+     } 
+    
+    if(menutext == "prescription" || menutext == 'Rețete'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/Retete_256x256_crop_center.png?v=1620750110"/>';
+          $(this).prepend(img);
+     } 
+    if(menutext == "Partner locations" || menutext == 'Locații partenere'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/LocatiiPartenere_256x256_crop_center.png?v=1620750110"/>';
+          $(this).prepend(img);
+     }
+    if(menutext == "SIGN IN" || menutext == 'Conectează-te'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/conecteazate_256x256_crop_center.png?v=1620750110"/>';
+          $(this).prepend(img);
+     }
+    if(menutext == "Tea & Infusions Archive" || menutext == 'Arhiva de ceai & infuzii'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/ceaiurisiinfuzii_256x256_crop_center.png?v=1620750114"/>';
+          $(this).prepend(img);
+     }  
+//     if(menutext == "Deals" || menutext == 'OFERTE'){ 
+//           var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/price-tag_256x256_crop_center.png?v=1620821808"/>';
+//           $(this).prepend(img);
+//      }
+    
+  });
+      
+   
+  // Submenu 
+  $(".mobile-draw .mobile-draw__wrapper .mobile-draw__nav ul.mobile-nav__items li.mobile-nav__item .mobile-nav__sub ul.mobile-nav__sub__items li.mobile-nav__sub__item a, .header-navs .primary-nav  ul.primary-nav__items li.primary-nav__item .nav__sub .nav__sub-wrap ul.nav__sub__items li.nav__sub__item a").text(function(){
+    
+    var menutext = $(this).text(); 
+    
+    if(menutext == "Tea & Infusions Archive" || menutext == 'Arhiva de ceai & infuzii'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/arhivaceaiuri_256x256_crop_center.png?v=1620750115"/>';
+          $(this).prepend(img);
+     } 
+    if(menutext == "Tea accessories" || menutext == 'Accesorii de ceai'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/accesoriideceai_256x256_crop_center.png?v=1620750114"/>';
+          $(this).prepend(img);
+     } 
+    if(menutext == "Teas and infusions" || menutext == 'Ceaiuri și infuzii'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/ceaiurisiinfuzii_256x256_crop_center.png?v=1620750114"/>';
+          $(this).prepend(img);
+     } 
+    if(menutext == "Ready to mix" || menutext == 'Gata de mixat'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/gatademixat_256x256_crop_center.png?v=1620750114"/>';
+          $(this).prepend(img);
+     }
+    if(menutext == "Ready to drink" || menutext == 'Gata de băut'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/gatadebaut_256x256_crop_center.png?v=1620750114"/>';
+          $(this).prepend(img);
+     } 
+    if(menutext == "Deals" || menutext == 'OFERTE'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/price-tag_256x256_crop_center.png?v=1620821808"/>';
+          $(this).prepend(img);
+     } 
+  });
+      
+      
+     
+      
+      
+      
+      
+  // Contact  
+  $(".mobile-draw .mobile-draw__wrapper .mobile-draw__footer .mobile-footer__contact .mobile-footer__title").text(function(){
+    
+    var menutext = $(this).text();
+     if(menutext == "Contact" || menutext == 'Contact'){ 
+          var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/Contact_256x256_crop_center.png?v=1620750110"/>';
+          $(this).prepend(img);
+     } 
+  }); 
+  
+   // Contact Info      
+//   $(".mobile-draw .mobile-draw__wrapper .mobile-draw__footer .mobile-footer__contact p.mobile-footer__text").text(function(){
+    
+//     if(menutext == "0040741208034" || menutext == '0040741208034'){ 
+//           var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/phone_256x256_crop_center.png?v=1620750110"/>';
+//           $(this).prepend(img);
+//      } 
+//     if(menutext == "contact@kofiti.ro" || menutext == 'contact@kofiti.ro'){ 
+//           var img = '<img src="https://cdn.shopify.com/s/files/1/0279/4238/7773/files/email_256x256_crop_center.png?v=1620750110"/>';
+//           $(this).prepend(img);
+//      } 
+//   });
+      
+      
+      
+ });
+      
+      
+  
+  
+   
+  
+   
+   
+ 
+  
+</script>
+<style>
+  
+  .mobile-draw .mobile-draw__wrapper .mobile-draw__nav ul.mobile-nav__items li.mobile-nav__item a{}
+  .mobile-draw .mobile-draw__wrapper .mobile-draw__nav ul.mobile-nav__items li.mobile-nav__item a img,
+  .header-navs .primary-nav  ul.primary-nav__items li.primary-nav__item a.primary-nav__link img,
+  .header-navs .primary-nav  ul.primary-nav__items li.primary-nav__item .nav__sub .nav__sub-wrap ul.nav__sub__items li.nav__sub__item a img{
+      width: 26px;
+    margin-right: 15px;
+    height: 26px;
+    transition: all .2s ease-in-out;
+    object-fit: contain;
+  }
+  
+  .mobile-draw .mobile-draw__wrapper .mobile-draw__footer .mobile-footer__contact .mobile-footer__title img,
+  .mobile-draw .mobile-draw__wrapper .mobile-draw__footer .mobile-footer__contact p.mobile-footer__text a img{
+    width: 18px;
+    margin-right: 10px;
+    height: 18px;
+    transition: all .2s ease-in-out;
+    object-fit: contain;
+  }
+  
+  
+ 
+</style>
